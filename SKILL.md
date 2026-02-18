@@ -2,8 +2,8 @@
 name: agent-dev-journal
 description: >
   Maintains a per-project engineering journal (Journal.md) plus a structured decision log and full conversation transcripts.
-  Use when the user says "journal log", "journal checkpoint", asks to capture decisions/transcripts, or when a pre-commit hook
-  indicates a checkpoint should be captured. The journal is stored at the closest git repo root and updated incrementally.
+  Use when the user says "journal log", "journal checkpoint", asks to capture decisions/transcripts, or when asked to checkpoint it should be captured. 
+  The journal is stored at the closest git repo root and updated incrementally.
 ---
 
 # Agent Dev Journal
