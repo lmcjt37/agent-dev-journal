@@ -99,13 +99,8 @@ Yes. It always writes to the closest git root, so it naturally scopes to the cur
 
 The skill creates it automatically using the required outline and style guidelines.
 
+
 ---
-
-## License
-
-See [LICENSE.md](./LICENSE.md).
-
-⸻
 
 ## Contributing
 
@@ -115,3 +110,15 @@ PRs welcome:
 - Tighter decision detection
 - Improved transcript compression heuristics
 - Better “journal entry” narrative templates
+
+---
+
+## Resource
+
+Building on top of Stewart Lynch's Journaling lifting from his [CLAUDE.md](https://gist.github.com/StewartLynch/07f7aad6b1731fbb350bf6c1afdb3006)
+
+---
+
+## License
+
+See [LICENSE.md](./LICENSE.md).
