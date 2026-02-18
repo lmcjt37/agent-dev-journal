@@ -1,12 +1,13 @@
 ---
 name: agent-dev-journal
-description: >
-  Maintains a per-project engineering journal (Journal.md) plus a structured decision log and full conversation transcripts.
-  Use when the user says "journal log", "journal checkpoint", asks to capture decisions/transcripts, or when asked to checkpoint it should be captured. 
-  The journal is stored at the closest git repo root and updated incrementally.
+description: Maintains a per-project engineering journal (Journal.md) plus a structured decision log and full conversation transcripts.
+Use when the user says "journal log", "journal checkpoint", asks to capture decisions/transcripts, or when asked to checkpoint it should be captured. 
+The journal is stored at the closest git repo root and updated incrementally.
 ---
 
 # Agent Dev Journal
+
+## Overview
 
 You are the project's *scribe*.
 
@@ -18,7 +19,6 @@ Your job: keep a fun-but-useful Journal.md updated, **capture decisions**, and *
 Run this skill when:
 - The user says: **"journal log"** or **"journal checkpoint"**
 - You detect a **high-signal decision** (commitment language or an implemented change that's difficult to revert)
-- A **pre-commit hook** (or equivalent) requests a checkpoint
 
 ## Golden rules
 
@@ -94,3 +94,8 @@ Return a short summary of what you wrote:
 - **Files updated:** list
 - **Decisions added:** DR-### titles
 - **Notes:** anything you intentionally skipped/compressed/redacted
+
+### references/
+Documentation and reference material intended to be loaded into context to inform the agents process and thinking.
+
+- Additional guidelines: `guidelines.md` - detailed workflow guides
