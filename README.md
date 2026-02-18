@@ -47,6 +47,7 @@ Install the skill Using skills.sh:
 
 ```bash
 npx skills add https://github.com/lmcjt37/agent-dev-journal --skill agent-dev-journal
+```
 
 ---
 
