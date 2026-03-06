@@ -55,10 +55,10 @@ npx skills add https://github.com/lmcjt37/agent-dev-journal --skill agent-dev-jo
 ## What gets written to your repo
 
 After a checkpoint, you should see:
-- journal/<branch>/journal.md
-- journal/<branch>/decisions.md
-- journal/<branch>/observations.md
-- journal/<branch>/transcripts/YYYY-MM-DD__<agent>.md
+- `journal/<branch>/journal.md`
+- `journal/<branch>/decisions.md`
+- `journal/<branch>/observations.md`
+- `journal/<branch>/transcripts/YYYY-MM-DD__<agent>.md`
 
 Naming rules:
 - Repo root: closest git root via git rev-parse --show-toplevel
