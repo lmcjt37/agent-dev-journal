@@ -18,7 +18,7 @@ Style:
 - include “war stories”
 - always capture the WHY, not just the WHAT
 
-## 2) Decision Record format (journal/decisions.md)
+## 2) Decision Record format (journal/<branch>/decisions.md)
 
 Each decision uses this template:
 
@@ -36,7 +36,7 @@ Each decision uses this template:
 Numbering:
 - Use the next integer based on the last DR-### in the file.
 
-## 3) Observation Record format (journal/observations.md)
+## 3) Observation Record format (journal/<branch>/observations.md)
 
 Each observation uses this template:
 
@@ -52,7 +52,7 @@ Each observation uses this template:
 Numbering:
 - Use the next integer based on the last OB-### in the file.
 
-## 4) Transcript format (journal/transcripts/*)
+## 4) Transcript format (journal/<branch>/transcripts/*)
 
 Filename:
 YYYY-MM-DD__<agent>.md

@@ -4,9 +4,10 @@ A journaling skill for AI coding agents that **captures decisions** and **stores
 
 It maintains three things at the **closest git repo root**:
 
-- `Journal.md` — a curated, human-friendly learning journal (medium-fun, memorable, ~400–500 words per entry)
-- `journal/decisions.md` — a searchable decision ledger (DR-### entries)
-- `journal/transcripts/…` — full conversation transcripts (with **large tool outputs compressed to highlights**)
+- `journal/<branch>/journal.md` — a curated, human-friendly learning journal (medium-fun, memorable, ~400–500 words per entry)
+- `journal/<branch>/decisions.md` — a searchable decision ledger (DR-### entries)
+- `journal/<branch>/observations.md` — a searchable observation directory (OB-### entries)
+- `journal/<branch>/transcripts/…` — full conversation transcripts (with **large tool outputs compressed to highlights**)
 
 ---
 
@@ -54,9 +55,10 @@ npx skills add https://github.com/lmcjt37/agent-dev-journal --skill agent-dev-jo
 ## What gets written to your repo
 
 After a checkpoint, you should see:
-- Journal.md
-- journal/decisions.md
-- journal/transcripts/YYYY-MM-DD__<branch>__<agent>.md
+- journal/<branch>/journal.md
+- journal/<branch>/decisions.md
+- journal/<branch>/observations.md
+- journal/<branch>/transcripts/YYYY-MM-DD__<agent>.md
 
 Naming rules:
 - Repo root: closest git root via git rev-parse --show-toplevel
@@ -71,6 +73,12 @@ Prompts that work well
 - capture today’s transcript and extract DRs
 - we just made an architecture decision—record it
 - summarize what changed and why we did it, then checkpoint
+
+OR;
+
+Slash commands:
+- /journal update artifacts to include our last changes
+- /observation there was a data drift between the current and prior implementation
 
 
 ## Redaction rules (what’s protected)
