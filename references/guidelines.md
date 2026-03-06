@@ -1,6 +1,6 @@
 # Agent Dev Journal — Reference
 
-## 1) Required Journal.md outline (create if missing)
+## 1) Required journal.md outline (create if missing)
 
 Journal.md MUST contain these sections:
 
@@ -36,11 +36,26 @@ Each decision uses this template:
 Numbering:
 - Use the next integer based on the last DR-### in the file.
 
-## 3) Transcript format (journal/transcripts/*)
+## 3) Observation Record format (journal/observations.md)
+
+Each observation uses this template:
+
+## OB-### — <Observation Title>
+- Date: YYYY-MM-DD
+- Branch: <branch>
+- Context: what problem were we solving?
+- Observation: what did we observe?
+- Why: any reasoning
+- Metrics: what measurements were gievn if any (omit this key if none)
+- Links: PR/issue/commit if available
+
+Numbering:
+- Use the next integer based on the last OB-### in the file.
+
+## 4) Transcript format (journal/transcripts/*)
 
 Filename:
-YYYY-MM-DD__<branch>__<agent>.md
-- Replace `/` in branch with `-`
+YYYY-MM-DD__<agent>.md
 - Agent fallback token: [AGENT]
 
 Contents template:
@@ -67,7 +82,7 @@ If tool output is large, store only:
 ## TODO / Next actions
 - [ ] ...
 
-## 4) Redaction rules (must apply before writing)
+## 5) Redaction rules (must apply before writing)
 
 Goal: keep useful history while preventing secret leakage.
 
@@ -92,7 +107,7 @@ Optional redaction (enable if requested later):
 
 Always leave the redaction note indicating type.
 
-## 5) High-signal filter (avoid journaling junk)
+## 6) High-signal filter (avoid journaling junk)
 
 Only create DRs/entries if one of:
 - Irreversible/expensive-to-revert choice was made
@@ -100,15 +115,20 @@ Only create DRs/entries if one of:
 - New pattern/practice learned that will recur
 - There is clear “why” future-you will forget
 
-## 6) Journal.md entry constraints
+## 7) journal.md entry constraints
 
 - 400–500 words max per entry
 - Medium fun: natural analogies, occasional humor
 - Prefer clarity over cleverness
 - Include: What happened, Why it mattered, What we learned, Pitfalls
 
-## 7) Other triggers
+## 8) Other triggers
 
 This skill is designed to be invoked by a wrapper command like:
-- "journal checkpoint"
 - "journal log"
+- "journal"
+
+OR
+
+Invoked with slash commands like:
+- `/journal <command>`
